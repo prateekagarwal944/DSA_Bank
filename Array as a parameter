@@ -1,0 +1,20 @@
+#include<stdio.h>
+struct rectangle
+{
+    int length;
+    int breadth;
+};
+int area(struct rectangle r1)
+{
+    r1.length=r1.length+5;
+    return r1.length*r1.breadth;
+}
+int main()
+{
+    struct rectangle r;
+    printf("Enter the length: ");
+    scanf("%d", &r.length);
+    printf("Enter the breadth: ");
+    scanf("%d", &r.breadth);
+    printf("Area is: %d", area(r));
+}
